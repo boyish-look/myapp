@@ -1,0 +1,258 @@
+.ComponentTop {
+    height:176px;
+    .wrap {
+        width: 1090px;
+        margin: 0 auto;
+    }
+    .m-top {
+        height: 36px;
+        line-height: 36px;
+        background-color: #333;
+        .m-siteNav {
+            width: 1090px;
+            margin: 0 auto;
+            ul>li {
+                height: 36px;
+                float: left;
+                margin-right:10px;
+                a {
+                    text-decoration:underline;
+                    color: #b4a078;
+                    font-size: 12px;
+                }
+                a:hover {
+                    color:#fff;
+                    text-decoration:none;
+                }
+                &>span {
+                    background: url(../img/d132c2561f18f1149d566a60d05fd9b7.gif) no-repeat center center;
+                    display:block;
+                    width: 14px;
+                    height: 100%;
+                    cursor: pointer;
+                }
+            }
+            .yx-cp-row {
+                .cp-row {
+                    width:78px;
+                    height:36px;
+                    float: left;
+                    margin-left: 10px;
+                }
+                a {
+                    color: #ccc;
+                    font-size: 12px;
+                }
+                ul {
+                    float:right;
+                }
+                .emy  {
+                    display: inlie-block;
+                    height: 16px;
+                    border-left: 1px solid #5c5c5c;
+                    vertical-align: middle;
+                    float: left;
+                    margin-top: 10px;
+                    padding:0px  8px;
+                }
+                li:last-child:hover {
+                    color:red;
+                }
+                ul>li>a {
+                    text-decoration: none;
+                }
+                a:hover {
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .funcTab {
+        background-color: #fff;
+        box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+        .wrap {
+            position: relative;
+            height:140px;
+            .logo {
+                background:url(../img/yanxuan-component_p_20.png) no-repeat 0 -194px;
+                width: 240px;
+                height: 60px;
+                background-size: 50%;
+                position: absolute;
+                top: 24px;
+                left: 0;
+            }
+            // 搜索框
+            .search {
+                    width: 530px;
+                    height: 36px;
+                    font-size:12px;
+                    position: relative;
+                    top: 26px;
+                    left:358px;
+                    .seamin {
+                        background: url(../img/yanxuan-component_p_20.png) -183px -1496px;
+                        width: 40px;
+                        height: 30px;
+                        background-size: 100px;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                    }
+                    input {
+                        box-sizing: border-box;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                        display: block;
+                        height: 38px;
+                        line-height: 38px;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        border: 1px solid #B4A078;
+                        border-bottom-left-radius: 19px;
+                        border-top-left-radius: 19px;
+                        font-size: 14px;
+                        width: 442px;
+                        padding-left: 38px;
+                        overflow: hidden;
+                        background: 0 0;
+                        outline:none;
+                        float: left;
+                    } 
+                    .searchword {
+                        position: absolute;
+                        top: 11px;
+                        left: 43px  
+                    }
+                    .searchbutton {
+                        width: 90px;
+                        height: 38px;
+                        background-color: #B4A078;
+                        border-top-right-radius: 19px;
+                        border-bottom-right-radius: 19px;
+                        cursor: pointer;
+                        float: right;
+                        color: #fff;
+                        line-height: 38px;
+                        text-align: center;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        outline: none;
+                    }
+                    .searchbutton:hover {
+                        background: #C2AE8D;;
+                        cursor:pointer;
+                    }
+                }  
+                // 购物车
+            .shcar {
+                    box-sizing:border-box;
+                    cursor: pointer;
+                    width: 134px;
+                    height: 38px;
+                    border: 1px solid #B4A078;
+                    border-radius: 19px;
+                    padding: 8px 0;
+                    float: right;
+                    position: absolute;
+                    right: -19px;
+                    top: 36px;
+            }
+            .nav {
+                margin-top: 5px;
+                font-weight: 700;
+                position: absolute;
+                height: 30px;
+                bottom: 0px;
+                li:first-child {
+                    padding-left: 0;
+                }
+                li:last-child {
+                    padding-right: 0;
+                }
+                li:first-child a {
+                    color: #b4a078;
+                    border-bottom: 3px solid #b4a078;
+                }
+                &>.emy {
+                    height: 16px;
+                    border-left: 1px solid #5c5c5c;
+                    vertical-align: middle;
+                    float: left;
+                    margin-top:2px;
+                }
+                &>li {
+                    float: left;
+                    font-size: 14px; 
+                    padding: 0 26px;
+                    &>a{
+                        color: #000;
+                        padding-bottom: 7px;
+                    &:hover {
+                        color: #b4a078;
+                        border-bottom: 3px solid #b4a078;
+                        }
+                    }  
+                    &:hover .subnav{
+                        display: block
+                    } 
+                    .subnav {
+                        box-sizing: border-box;
+                        width: 1202px;
+                        padding: 14px 20px 20px;
+                        background: #fff;
+                        height: 402px;
+                        position: absolute;
+                        top:30px;
+                        left:-55px;
+                        border: 1px solid rgba(0,0,0,.1);
+                        display:none;
+                        dl {
+                            float: left;
+                            margin-right: 16px;
+                            dt {
+                                color:#333333!important;
+                                max-width: 124px;
+                                width: 124px;
+                                display: inline-block;
+                                margin-bottom: 10px;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 36px;
+                                border-bottom: 1px solid #ddd;
+                            }
+                            dd {
+                                width: 125px;
+                                margin-left: 4px;
+                                font-size: 14px;
+                                vertical-align: middle;
+                                line-height: 1.2;
+                                overflow: hidden;
+                                word-wrap: break-word;
+                                font-weight: normal!important;
+                                position: relative;
+                                img {
+                                    width:50px;
+                                    height:50px;
+                                    vertical-align: middle;
+                                }
+                                span {
+                                    font-size: 14px;
+                                    vertical-align: middle;
+                                    word-wrap: break-word;
+                                    text-align: center;
+                                }
+                                span:hover {
+                                    color: #b4a078;
+                                }
+                            }
+                        }
+                    } 
+                                                        
+                }
+            }
+        }
+    }
+}
