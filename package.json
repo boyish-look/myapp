@@ -1,7 +1,6 @@
 {
   "name": "yanxuan.com",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +24,14 @@
   },
   "dependencies": {
     "jquery": "^3.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boyish-look/myapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boyish-look/myapp/issues"
+  },
+  "homepage": "https://github.com/boyish-look/myapp#readme",
+  "description": ""
 }
