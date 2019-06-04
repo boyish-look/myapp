@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<script>
+    window.onload = function () {
+        $('#btn-register').on('click', function () {
+            $.ajax({
+                type: "get",
+                url: "../lib/update.php",
+                data: {
+                    email: $('#email').val(),
+                    password: $('#password').val(),
+                    phone: $('#phone').val(),
+                },
+                dataType: "JSON",
+                success: function (response) {
+                    console.log('ok');
+                    console.log(response);
+                    if (response == 1) {
+                        location.href = "../html/login.html";
+                    }
+                }
+            });
+        })
+    }
+</script>
+<style>
+    label.error {
+        color: pink;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="center clearfix">
+            <div class="m-logo spritebg"></div>
+            <div class="rg-box">
+                "已有帐号？去
+                <a id="login-btn" style="font-size: 18px">登录</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="wrapper">
+            <div class="clearfix m-tab">
+                <div class="select left">普通账户注册</div>
+                <a class="right" id="rightBtn" href="#">靓号注册
+                    <p class="new">new</p>
+                </a>
+            </div>
+            <div class="m-opr clearfix">
+                <form id="myform">
+                    <div class="u-input firstelem">
+                        <label class="u-label" for="email" 
+                        name="email" id="email">账户：</label>
+                        <input type="text" class="i-inpt" name="email" id="email" placeholder="网易邮箱/其他邮箱">
+                    </div>
+
+                    <div class="u-input firstelem">
+                        <label class="u-label" for="password" id="password" name="password">密码：</label>
+                        <input class="i-inpt" id="password" name="password" placeholder="6-16位密码，区分大小写" type="password">
+                    </div>
+                    <div class="u-input firstelem">
+                        <label class="u-label" for="confirm_password"  id="confirm_password" name=" confirm_password">确认密码：</label>
+                        <input class="i-inpt" id="confirm_password" placeholder="再次输入密码" name=" confirm_password">
+                    </div>
+                    <div class="u-input firstelem">
+                        <label class="u-label" for="inpt-account">验证码：</label>
+                        <input class="i-inpt" id="iount" placeholder="输入图片验证码">
+                    </div>
+                    <div class="u-input firstelem">
+                        <label class="u-label" for="phone"  id="phone" name="phone" >手机号：</label>
+                        <input class="i-inpt" id="phone" name="phone" placeholder="11位手机号">
+                    </div>
+                    <div class="u-input firstelem">
+                        <label class="u-label  " for="inpt-account">短信验证：</label>
+                        <input class="i-inpt smsize" id="icount" placeholder="输入短信验证码">
+                        <span class="b-btn btn-getsms">获取验证码</span>
+                    </div>
+                    <div class="u-input" style="height: 58px;">
+                        <label class="u-label">&nbsp;</label>
+                        <button class="b-btn btn-reg btn-red" id="btn-register" type="button">注&nbsp;&nbsp;册</button>
+                        <!--Regular if28-->
+                    </div>
+                    <div class="u-tips">
+                        <label class="u-label">&nbsp;</label>
+                        <span class="tip">
+                            <span class="m-agree"><input type="checkbox" class="u-agree"></span>
+                            <span style="margin-left: 10px;">用户勾选即代表同意</span>
+                            <a href="http://reg.163.com/agreement.shtml" target="_blank">《网易邮箱服务条款》</a>
+                            和<a href="http://reg.163.com/agreement_game.shtml" target="_blank">《网易隐私政策》</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="center">
+            <div class="m-cp">
+                <p>
+                    <a href="http://corp.163.com/eng/about/overview.html" target="_blank">About NetEase</a>-<a
+                        href="http://gb.corp.163.com/gb/about/overview.html" target="_blank">公司简介</a>-<a
+                        href="http://gb.corp.163.com/gb/contactus.html" target="_blank">联系方式</a>-<a
+                        href="http://reg.163.com/help/help_oauth2.html?v=20141215" target="_blank">OAuth2.0认证</a>-<a
+                        href="http://corp.163.com/gb/job/job.html" target="_blank">招聘信息</a>-<a
+                        href="http://help.163.com/" target="_blank">客户服务</a>-<a
+                        href="http://gb.corp.163.com/gb/legal.html" target="_blank">相关法律</a>-<a
+                        href="http://emarketing.biz.163.com/" target="_blank">网络营销</a>
+                    <p>网易公司版权所有 ©1997-2019</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/validator/11.0.0/validator.js"></script>
+    <script src="../js/register.js"></script>
+  
+</body>
+
+</html>

@@ -48,6 +48,30 @@
 .ComponentTop .m-top .m-siteNav .yx-cp-row ul {
   float: right;
 }
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul .lx .xiazai {
+  width: 139px;
+  height: 157px;
+  background: #fff;
+  border: 1px solid #5c5c5c;
+  position: absolute;
+  top: 36px;
+  right: 229px;
+  z-index: 444;
+  display: none;
+}
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul .lx .xiazai img {
+  display: block;
+  margin: 0 auto;
+  width: 117px;
+  height: 117px;
+}
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul .lx .xiazai .sfsdf {
+  text-align: center;
+  color: #B4A078;
+}
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul .lx:hover .xiazai {
+  display: block;
+}
 .ComponentTop .m-top .m-siteNav .yx-cp-row .emy {
   display: inlie-block;
   height: 16px;
@@ -55,7 +79,7 @@
   vertical-align: middle;
   float: left;
   margin-top: 10px;
-  padding: 0px  8px;
+  padding: 0px 8px;
 }
 .ComponentTop .m-top .m-siteNav .yx-cp-row li:last-child:hover {
   color: red;
@@ -159,12 +183,34 @@
   right: -19px;
   top: 36px;
 }
+.ComponentTop .funcTab .wrap .shcar .car {
+  background: url(../img/yanxuan-component_p_20.png) 0px 953px;
+  background-size: 60px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 16px;
+}
+.ComponentTop .funcTab .wrap .shcar span {
+  font-size: 14px;
+  margin-bottom: -4px;
+}
+.ComponentTop .funcTab .wrap .shcar .cc {
+  background: url(../img/yanxuan-component_p_20.png) 0px 396px;
+  display: inline-block;
+  background-size: 100px;
+  width: 30px;
+  height: 20px;
+  padding: 0px 7px;
+  color: #fff;
+}
 .ComponentTop .funcTab .wrap .nav {
   margin-top: 5px;
   font-weight: 700;
   position: absolute;
   height: 30px;
   bottom: 0px;
+  width: 1150px;
 }
 .ComponentTop .funcTab .wrap .nav li:first-child {
   padding-left: 0;
@@ -186,7 +232,7 @@
 .ComponentTop .funcTab .wrap .nav > li {
   float: left;
   font-size: 14px;
-  padding: 0 26px;
+  padding: 0 25px;
 }
 .ComponentTop .funcTab .wrap .nav > li > a {
   color: #000;
@@ -210,6 +256,7 @@
   left: -55px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: none;
+  z-index: 100;
 }
 .ComponentTop .funcTab .wrap .nav > li .subnav dl {
   float: left;

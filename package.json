@@ -23,7 +23,9 @@
     "sprite-image": "0.0.5"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "jquery-validation": "^1.19.0"
   },
   "repository": {
     "type": "git",
@@ -33,5 +35,5 @@
     "url": "https://github.com/boyish-look/myapp/issues"
   },
   "homepage": "https://github.com/boyish-look/myapp#readme",
-  "description": ""
+  "description": "主流的版本控制 git  svn\r 版本控制在所有的编辑器都有集成"
 }
